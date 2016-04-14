@@ -15,8 +15,8 @@
 		92AD8EB11CBB413300C6EF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AD8EAF1CBB413300C6EF14 /* LaunchScreen.storyboard */; };
 		92AD8EBC1CBB413300C6EF14 /* ExDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EBB1CBB413300C6EF14 /* ExDisplayTests.swift */; };
 		92AD8EC71CBB413300C6EF14 /* ExDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EC61CBB413300C6EF14 /* ExDisplayUITests.swift */; };
-		F6FC72691CBE1F2300BB9871 /* ExAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FC72681CBE1F2300BB9871 /* ExAuto.framework */; };
-		F6FC726A1CBE1F2300BB9871 /* ExAuto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6FC72681CBE1F2300BB9871 /* ExAuto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4CF7F4A1CBF891A008B4776 /* ExAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CF7F491CBF891A008B4776 /* ExAuto.framework */; };
+		F4CF7F4B1CBF891A008B4776 /* ExAuto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4CF7F491CBF891A008B4776 /* ExAuto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F6FC726B1CBE1F2300BB9871 /* Embed Frameworks */ = {
+		F4CF7F4C1CBF891A008B4776 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F6FC726A1CBE1F2300BB9871 /* ExAuto.framework in Embed Frameworks */,
+				F4CF7F4B1CBF891A008B4776 /* ExAuto.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +66,7 @@
 		92AD8EC61CBB413300C6EF14 /* ExDisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDisplayUITests.swift; sourceTree = "<group>"; };
 		92AD8EC81CBB413300C6EF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAD776251CBDF0EF008147C6 /* ExAuto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExAuto.framework; path = "../../../Library/Developer/Xcode/DerivedData/ExDisplay-bravmfmucasaogekejsbekwfniac/Build/Products/Debug-iphonesimulator/ExAuto.framework"; sourceTree = "<group>"; };
-		F6FC72681CBE1F2300BB9871 /* ExAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExAuto.framework; path = "/Users/lihao/Library/Developer/Xcode/DerivedData/ExDisplay-czvwtxspmbymrqahbcpkyhymaddz/Build/Products/Debug-iphoneos/ExAuto.framework"; sourceTree = "<absolute>"; };
+		F4CF7F491CBF891A008B4776 /* ExAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExAuto.framework; path = "/Users/mapbar_ydt/Library/Developer/Xcode/DerivedData/ExDisplay-gphajglahdfwstgonezpyxatsohn/Build/Products/Debug-iphonesimulator/ExAuto.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6FC72691CBE1F2300BB9871 /* ExAuto.framework in Frameworks */,
+				F4CF7F4A1CBF891A008B4776 /* ExAuto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 		92AD8E971CBB413300C6EF14 = {
 			isa = PBXGroup;
 			children = (
-				F6FC72681CBE1F2300BB9871 /* ExAuto.framework */,
+				F4CF7F491CBF891A008B4776 /* ExAuto.framework */,
 				92AD8EA21CBB413300C6EF14 /* ExDisplay */,
 				92AD8EBA1CBB413300C6EF14 /* ExDisplayTests */,
 				92AD8EC51CBB413300C6EF14 /* ExDisplayUITests */,
@@ -159,7 +159,7 @@
 				92AD8E9C1CBB413300C6EF14 /* Sources */,
 				92AD8E9D1CBB413300C6EF14 /* Frameworks */,
 				92AD8E9E1CBB413300C6EF14 /* Resources */,
-				F6FC726B1CBE1F2300BB9871 /* Embed Frameworks */,
+				F4CF7F4C1CBF891A008B4776 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
