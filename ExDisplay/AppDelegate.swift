@@ -13,8 +13,41 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var secondWindow: SecondScreenLauncher?
+    
+    func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.backgroundColor = UIColor.whiteColor()
+        
+        let phoneVC = PhoneViewController()
+        let naviCntr = UINavigationController(rootViewController:phoneVC)
+        naviCntr.navigationBarHidden = true;
+        
+        self.secondWindow = SecondScreenLauncher()
+        self.secondWindow!.initSecondScreen()
+        setupScreenConnectionNotificationHandlers()
 
-
+        self.window?.rootViewController = naviCntr
+        self.window?.makeKeyAndVisible()
+        
+        return true
+    }
+    
+    func setupScreenConnectionNotificationHandlers() {
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(handleScreenDidConnectNotification(_:)), name: UIScreenDidConnectNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(handleScreenDidDisconnectNotification(_:)), name: UIScreenDidDisconnectNotification, object: nil)
+    }
+    
+    func handleScreenDidConnectNotification(note:NSNotification) {
+        self.secondWindow!.handleScreenDidConnectNotification(note)
+    }
+    
+    func handleScreenDidDisconnectNotification(note:NSNotification) {
+        self.secondWindow!.handleScreenDidDisconnectNotification(note)
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true

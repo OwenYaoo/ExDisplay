@@ -1,0 +1,3 @@
+framework module ExAuto {
+    header "ExAuto-Swift.h"
+}

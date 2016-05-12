@@ -7,16 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840FB43F1CD0BD1200298510 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FB43E1CD0BD1200298510 /* BaseViewController.swift */; };
+		84360C251CDAD72A00EFC4A5 /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84360C231CDAD72A00EFC4A5 /* LauncherViewController.swift */; };
+		84360C261CDAD72A00EFC4A5 /* SecondScreenLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84360C241CDAD72A00EFC4A5 /* SecondScreenLauncher.swift */; };
+		84E2E09B1CC9BD71002A39F1 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E09A1CC9BD71002A39F1 /* PhoneViewController.swift */; };
+		84E2E09D1CC9BD79002A39F1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E09C1CC9BD79002A39F1 /* ContactsViewController.swift */; };
+		84E2E09F1CC9BD82002A39F1 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E09E1CC9BD82002A39F1 /* MusicViewController.swift */; };
+		84E2E0A11CC9BD8A002A39F1 /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E0A01CC9BD8A002A39F1 /* VRViewController.swift */; };
+		84E2E0A31CC9BD95002A39F1 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E0A21CC9BD95002A39F1 /* WeatherViewController.swift */; };
+		92715A241CE1BF400022E589 /* ExAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92715A211CE1BF340022E589 /* ExAuto.framework */; };
+		92715A251CE1BF400022E589 /* ExAuto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92715A211CE1BF340022E589 /* ExAuto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92715A4B1CE1BFD60022E589 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92715A271CE1BFD60022E589 /* ContactsView.swift */; };
+		92715A4C1CE1BFD60022E589 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A2B1CE1BFD60022E589 /* JSONModel.m */; };
+		92715A4D1CE1BFD60022E589 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A2D1CE1BFD60022E589 /* JSONModelArray.m */; };
+		92715A4E1CE1BFD60022E589 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A2F1CE1BFD60022E589 /* JSONModelClassProperty.m */; };
+		92715A4F1CE1BFD60022E589 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A311CE1BFD60022E589 /* JSONModelError.m */; };
+		92715A501CE1BFD60022E589 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A341CE1BFD60022E589 /* NSArray+JSONModel.m */; };
+		92715A511CE1BFD60022E589 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A381CE1BFD60022E589 /* JSONAPI.m */; };
+		92715A521CE1BFD60022E589 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A3A1CE1BFD60022E589 /* JSONHTTPClient.m */; };
+		92715A531CE1BFD60022E589 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A3C1CE1BFD60022E589 /* JSONModel+networking.m */; };
+		92715A541CE1BFD60022E589 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A3F1CE1BFD60022E589 /* JSONKeyMapper.m */; };
+		92715A551CE1BFD60022E589 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A411CE1BFD60022E589 /* JSONValueTransformer.m */; };
+		92715A561CE1BFD60022E589 /* ContactDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A441CE1BFD60022E589 /* ContactDataHelper.m */; };
+		92715A571CE1BFD60022E589 /* ContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A461CE1BFD60022E589 /* ContactModel.m */; };
+		92715A581CE1BFD60022E589 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A481CE1BFD60022E589 /* NSString+Utils.m */; };
+		92715A591CE1BFD60022E589 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 92715A491CE1BFD60022E589 /* white.png */; };
+		92715A5A1CE1BFD60022E589 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 92715A4A1CE1BFD60022E589 /* yellow.png */; };
 		92AD8EA41CBB413300C6EF14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EA31CBB413300C6EF14 /* AppDelegate.swift */; };
-		92AD8EA61CBB413300C6EF14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EA51CBB413300C6EF14 /* ViewController.swift */; };
 		92AD8EA91CBB413300C6EF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AD8EA71CBB413300C6EF14 /* Main.storyboard */; };
 		92AD8EAC1CBB413300C6EF14 /* ExDisplay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EAA1CBB413300C6EF14 /* ExDisplay.xcdatamodeld */; };
 		92AD8EAE1CBB413300C6EF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AD8EAD1CBB413300C6EF14 /* Assets.xcassets */; };
 		92AD8EB11CBB413300C6EF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AD8EAF1CBB413300C6EF14 /* LaunchScreen.storyboard */; };
 		92AD8EBC1CBB413300C6EF14 /* ExDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EBB1CBB413300C6EF14 /* ExDisplayTests.swift */; };
 		92AD8EC71CBB413300C6EF14 /* ExDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EC61CBB413300C6EF14 /* ExDisplayUITests.swift */; };
-		F4CF7F4A1CBF891A008B4776 /* ExAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CF7F491CBF891A008B4776 /* ExAuto.framework */; };
-		F4CF7F4B1CBF891A008B4776 /* ExAuto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4CF7F491CBF891A008B4776 /* ExAuto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+
+		9A69ECEADF4DD662E537AF0C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB32D13AD2965A41CC237B6B /* Pods.framework */; };
+		F63B49C71CC9F1C60046F2FD /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49C61CC9F1C60046F2FD /* MusicPlayerView.swift */; };
+		F63B49C91CC9F1E00046F2FD /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49C81CC9F1E00046F2FD /* MusicPlayer.swift */; };
+		F63B49CB1CC9F1F30046F2FD /* MusicPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49CA1CC9F1F30046F2FD /* MusicPlayerModel.swift */; };
+		F63B49CD1CC9FB5D0046F2FD /* MusicPlayerListTabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49CC1CC9FB5D0046F2FD /* MusicPlayerListTabelView.swift */; };
+		F63B49D01CCA252F0046F2FD /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49CF1CCA252F0046F2FD /* WeatherView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +68,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F4CF7F4C1CBF891A008B4776 /* Embed Frameworks */ = {
+
+
+		92715A261CE1BF400022E589 /* Embed Frameworks */ = {
+
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F4CF7F4B1CBF891A008B4776 /* ExAuto.framework in Embed Frameworks */,
+
+				92715A251CE1BF400022E589 /* ExAuto.framework in Embed Frameworks */,
+
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,9 +87,50 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23B52125E1682509A7548780 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		561391321C3F5B7036C3D40B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		840FB43E1CD0BD1200298510 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84360C231CDAD72A00EFC4A5 /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
+		84360C241CDAD72A00EFC4A5 /* SecondScreenLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenLauncher.swift; sourceTree = "<group>"; };
+		84E2E09A1CC9BD71002A39F1 /* PhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
+		84E2E09C1CC9BD79002A39F1 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		84E2E09E1CC9BD82002A39F1 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		84E2E0A01CC9BD8A002A39F1 /* VRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
+		84E2E0A21CC9BD95002A39F1 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		92715A211CE1BF340022E589 /* ExAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExAuto.framework; path = "/Users/owenyao/Library/Developer/Xcode/DerivedData/ExDisplay-augmhezhriatuifortxbjfohlaug/Build/Products/Debug-iphoneos/ExAuto.framework"; sourceTree = "<absolute>"; };
+		92715A271CE1BFD60022E589 /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		92715A2A1CE1BFD60022E589 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		92715A2B1CE1BFD60022E589 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		92715A2C1CE1BFD60022E589 /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		92715A2D1CE1BFD60022E589 /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		92715A2E1CE1BFD60022E589 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		92715A2F1CE1BFD60022E589 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		92715A301CE1BFD60022E589 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		92715A311CE1BFD60022E589 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		92715A331CE1BFD60022E589 /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		92715A341CE1BFD60022E589 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		92715A351CE1BFD60022E589 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		92715A371CE1BFD60022E589 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		92715A381CE1BFD60022E589 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		92715A391CE1BFD60022E589 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		92715A3A1CE1BFD60022E589 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		92715A3B1CE1BFD60022E589 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		92715A3C1CE1BFD60022E589 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		92715A3E1CE1BFD60022E589 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		92715A3F1CE1BFD60022E589 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		92715A401CE1BFD60022E589 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		92715A411CE1BFD60022E589 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		92715A431CE1BFD60022E589 /* ContactDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDataHelper.h; sourceTree = "<group>"; };
+		92715A441CE1BFD60022E589 /* ContactDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDataHelper.m; sourceTree = "<group>"; };
+		92715A451CE1BFD60022E589 /* ContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactModel.h; sourceTree = "<group>"; };
+		92715A461CE1BFD60022E589 /* ContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactModel.m; sourceTree = "<group>"; };
+		92715A471CE1BFD60022E589 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		92715A481CE1BFD60022E589 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		92715A491CE1BFD60022E589 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		92715A4A1CE1BFD60022E589 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		92715A5B1CE1BFFC0022E589 /* ExDisplay-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ExDisplay-Bridging-Header.h"; path = "Contacts/ExDisplay-Bridging-Header.h"; sourceTree = "<group>"; };
 		92AD8EA01CBB413300C6EF14 /* ExDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AD8EA31CBB413300C6EF14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92AD8EA51CBB413300C6EF14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92AD8EA81CBB413300C6EF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92AD8EAB1CBB413300C6EF14 /* ExDisplay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExDisplay.xcdatamodel; sourceTree = "<group>"; };
 		92AD8EAD1CBB413300C6EF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,8 +142,14 @@
 		92AD8EC21CBB413300C6EF14 /* ExDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AD8EC61CBB413300C6EF14 /* ExDisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDisplayUITests.swift; sourceTree = "<group>"; };
 		92AD8EC81CBB413300C6EF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAD776251CBDF0EF008147C6 /* ExAuto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExAuto.framework; path = "../../../Library/Developer/Xcode/DerivedData/ExDisplay-bravmfmucasaogekejsbekwfniac/Build/Products/Debug-iphonesimulator/ExAuto.framework"; sourceTree = "<group>"; };
-		F4CF7F491CBF891A008B4776 /* ExAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExAuto.framework; path = "/Users/mapbar_ydt/Library/Developer/Xcode/DerivedData/ExDisplay-gphajglahdfwstgonezpyxatsohn/Build/Products/Debug-iphonesimulator/ExAuto.framework"; sourceTree = "<absolute>"; };
+
+		F63B49C61CC9F1C60046F2FD /* MusicPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
+		F63B49C81CC9F1E00046F2FD /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		F63B49CA1CC9F1F30046F2FD /* MusicPlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerModel.swift; sourceTree = "<group>"; };
+		F63B49CC1CC9FB5D0046F2FD /* MusicPlayerListTabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerListTabelView.swift; sourceTree = "<group>"; };
+		F63B49CF1CCA252F0046F2FD /* WeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		FB32D13AD2965A41CC237B6B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +157,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4CF7F4A1CBF891A008B4776 /* ExAuto.framework in Frameworks */,
+
+				92715A241CE1BF400022E589 /* ExAuto.framework in Frameworks */,
+				9A69ECEADF4DD662E537AF0C /* Pods.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,14 +181,150 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B558321CC7806D001065B4 /* CarScene */ = {
+			isa = PBXGroup;
+			children = (
+				84360C231CDAD72A00EFC4A5 /* LauncherViewController.swift */,
+				84360C241CDAD72A00EFC4A5 /* SecondScreenLauncher.swift */,
+				840FB43E1CD0BD1200298510 /* BaseViewController.swift */,
+			);
+			path = CarScene;
+			sourceTree = "<group>";
+		};
+		84B558341CC7807A001065B4 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				92715A271CE1BFD60022E589 /* ContactsView.swift */,
+				92715A281CE1BFD60022E589 /* JSONModel */,
+				92715A421CE1BFD60022E589 /* libs */,
+				84E2E09C1CC9BD79002A39F1 /* ContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		84B558351CC7808E001065B4 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				84E2E09E1CC9BD82002A39F1 /* MusicViewController.swift */,
+				F63B49C61CC9F1C60046F2FD /* MusicPlayerView.swift */,
+				F63B49C81CC9F1E00046F2FD /* MusicPlayer.swift */,
+				F63B49CA1CC9F1F30046F2FD /* MusicPlayerModel.swift */,
+				F63B49CC1CC9FB5D0046F2FD /* MusicPlayerListTabelView.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		84B558361CC780AC001065B4 /* PhoneScene */ = {
+			isa = PBXGroup;
+			children = (
+				84E2E09A1CC9BD71002A39F1 /* PhoneViewController.swift */,
+			);
+			path = PhoneScene;
+			sourceTree = "<group>";
+		};
+		84B558371CC780B7001065B4 /* VoiceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				84E2E0A01CC9BD8A002A39F1 /* VRViewController.swift */,
+			);
+			path = VoiceRecognition;
+			sourceTree = "<group>";
+		};
+		84B558381CC780BF001065B4 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				84E2E0A21CC9BD95002A39F1 /* WeatherViewController.swift */,
+				F63B49CF1CCA252F0046F2FD /* WeatherView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		92715A281CE1BFD60022E589 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				92715A291CE1BFD60022E589 /* JSONModel */,
+				92715A321CE1BFD60022E589 /* JSONModelCategories */,
+				92715A351CE1BFD60022E589 /* JSONModelLib.h */,
+				92715A361CE1BFD60022E589 /* JSONModelNetworking */,
+				92715A3D1CE1BFD60022E589 /* JSONModelTransformations */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		92715A291CE1BFD60022E589 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				92715A2A1CE1BFD60022E589 /* JSONModel.h */,
+				92715A2B1CE1BFD60022E589 /* JSONModel.m */,
+				92715A2C1CE1BFD60022E589 /* JSONModelArray.h */,
+				92715A2D1CE1BFD60022E589 /* JSONModelArray.m */,
+				92715A2E1CE1BFD60022E589 /* JSONModelClassProperty.h */,
+				92715A2F1CE1BFD60022E589 /* JSONModelClassProperty.m */,
+				92715A301CE1BFD60022E589 /* JSONModelError.h */,
+				92715A311CE1BFD60022E589 /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		92715A321CE1BFD60022E589 /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				92715A331CE1BFD60022E589 /* NSArray+JSONModel.h */,
+				92715A341CE1BFD60022E589 /* NSArray+JSONModel.m */,
+			);
+			path = JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		92715A361CE1BFD60022E589 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				92715A371CE1BFD60022E589 /* JSONAPI.h */,
+				92715A381CE1BFD60022E589 /* JSONAPI.m */,
+				92715A391CE1BFD60022E589 /* JSONHTTPClient.h */,
+				92715A3A1CE1BFD60022E589 /* JSONHTTPClient.m */,
+				92715A3B1CE1BFD60022E589 /* JSONModel+networking.h */,
+				92715A3C1CE1BFD60022E589 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		92715A3D1CE1BFD60022E589 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				92715A3E1CE1BFD60022E589 /* JSONKeyMapper.h */,
+				92715A3F1CE1BFD60022E589 /* JSONKeyMapper.m */,
+				92715A401CE1BFD60022E589 /* JSONValueTransformer.h */,
+				92715A411CE1BFD60022E589 /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		92715A421CE1BFD60022E589 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				92715A431CE1BFD60022E589 /* ContactDataHelper.h */,
+				92715A441CE1BFD60022E589 /* ContactDataHelper.m */,
+				92715A451CE1BFD60022E589 /* ContactModel.h */,
+				92715A461CE1BFD60022E589 /* ContactModel.m */,
+				92715A471CE1BFD60022E589 /* NSString+Utils.h */,
+				92715A481CE1BFD60022E589 /* NSString+Utils.m */,
+				92715A491CE1BFD60022E589 /* white.png */,
+				92715A4A1CE1BFD60022E589 /* yellow.png */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
 		92AD8E971CBB413300C6EF14 = {
 			isa = PBXGroup;
 			children = (
-				F4CF7F491CBF891A008B4776 /* ExAuto.framework */,
+				92715A211CE1BF340022E589 /* ExAuto.framework */,
+
 				92AD8EA21CBB413300C6EF14 /* ExDisplay */,
 				92AD8EBA1CBB413300C6EF14 /* ExDisplayTests */,
 				92AD8EC51CBB413300C6EF14 /* ExDisplayUITests */,
 				92AD8EA11CBB413300C6EF14 /* Products */,
+				C23D430162B0B7B2A8BA2021 /* Pods */,
+				D5A960B352B724C6D1B320FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,14 +341,19 @@
 		92AD8EA21CBB413300C6EF14 /* ExDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				84B558321CC7806D001065B4 /* CarScene */,
+				84B558361CC780AC001065B4 /* PhoneScene */,
+				84B558341CC7807A001065B4 /* Contacts */,
+				84B558351CC7808E001065B4 /* Music */,
+				84B558371CC780B7001065B4 /* VoiceRecognition */,
+				84B558381CC780BF001065B4 /* Weather */,
 				92AD8EA31CBB413300C6EF14 /* AppDelegate.swift */,
-				92AD8EA51CBB413300C6EF14 /* ViewController.swift */,
 				92AD8EA71CBB413300C6EF14 /* Main.storyboard */,
 				92AD8EAD1CBB413300C6EF14 /* Assets.xcassets */,
 				92AD8EAF1CBB413300C6EF14 /* LaunchScreen.storyboard */,
 				92AD8EB21CBB413300C6EF14 /* Info.plist */,
+				92715A5B1CE1BFFC0022E589 /* ExDisplay-Bridging-Header.h */,
 				92AD8EAA1CBB413300C6EF14 /* ExDisplay.xcdatamodeld */,
-				AAD776251CBDF0EF008147C6 /* ExAuto.framework */,
 			);
 			path = ExDisplay;
 			sourceTree = "<group>";
@@ -149,6 +376,23 @@
 			path = ExDisplayUITests;
 			sourceTree = "<group>";
 		};
+		C23D430162B0B7B2A8BA2021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23B52125E1682509A7548780 /* Pods.debug.xcconfig */,
+				561391321C3F5B7036C3D40B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5A960B352B724C6D1B320FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB32D13AD2965A41CC237B6B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,10 +400,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92AD8ECB1CBB413300C6EF14 /* Build configuration list for PBXNativeTarget "ExDisplay" */;
 			buildPhases = (
+				1307D0CF4F513239A5FF8835 /* Check Pods Manifest.lock */,
 				92AD8E9C1CBB413300C6EF14 /* Sources */,
 				92AD8E9D1CBB413300C6EF14 /* Frameworks */,
 				92AD8E9E1CBB413300C6EF14 /* Resources */,
-				F4CF7F4C1CBF891A008B4776 /* Embed Frameworks */,
+				C16FCC0E983F8870D135D13E /* Embed Pods Frameworks */,
+				1501C4554E220DB68CB93913 /* Copy Pods Resources */,
+				92715A261CE1BF400022E589 /* Embed Frameworks */,
+
 			);
 			buildRules = (
 			);
@@ -255,6 +503,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92AD8EB11CBB413300C6EF14 /* LaunchScreen.storyboard in Resources */,
+				92715A591CE1BFD60022E589 /* white.png in Resources */,
+				92715A5A1CE1BFD60022E589 /* yellow.png in Resources */,
 				92AD8EAE1CBB413300C6EF14 /* Assets.xcassets in Resources */,
 				92AD8EA91CBB413300C6EF14 /* Main.storyboard in Resources */,
 			);
@@ -276,14 +526,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1307D0CF4F513239A5FF8835 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1501C4554E220DB68CB93913 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C16FCC0E983F8870D135D13E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92AD8E9C1CBB413300C6EF14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63B49C91CC9F1E00046F2FD /* MusicPlayer.swift in Sources */,
+				92715A501CE1BFD60022E589 /* NSArray+JSONModel.m in Sources */,
+				92715A571CE1BFD60022E589 /* ContactModel.m in Sources */,
+				84E2E0A11CC9BD8A002A39F1 /* VRViewController.swift in Sources */,
+				92715A4E1CE1BFD60022E589 /* JSONModelClassProperty.m in Sources */,
+				84E2E0A31CC9BD95002A39F1 /* WeatherViewController.swift in Sources */,
+				92715A561CE1BFD60022E589 /* ContactDataHelper.m in Sources */,
+				92715A581CE1BFD60022E589 /* NSString+Utils.m in Sources */,
+				92715A4D1CE1BFD60022E589 /* JSONModelArray.m in Sources */,
+				84E2E09F1CC9BD82002A39F1 /* MusicViewController.swift in Sources */,
+				92715A531CE1BFD60022E589 /* JSONModel+networking.m in Sources */,
+				84360C251CDAD72A00EFC4A5 /* LauncherViewController.swift in Sources */,
+				840FB43F1CD0BD1200298510 /* BaseViewController.swift in Sources */,
+				92715A4F1CE1BFD60022E589 /* JSONModelError.m in Sources */,
+				F63B49D01CCA252F0046F2FD /* WeatherView.swift in Sources */,
+				92715A4B1CE1BFD60022E589 /* ContactsView.swift in Sources */,
+				84E2E09B1CC9BD71002A39F1 /* PhoneViewController.swift in Sources */,
+				F63B49CD1CC9FB5D0046F2FD /* MusicPlayerListTabelView.swift in Sources */,
+				84360C261CDAD72A00EFC4A5 /* SecondScreenLauncher.swift in Sources */,
+				92715A521CE1BFD60022E589 /* JSONHTTPClient.m in Sources */,
+				92715A551CE1BFD60022E589 /* JSONValueTransformer.m in Sources */,
+				F63B49C71CC9F1C60046F2FD /* MusicPlayerView.swift in Sources */,
 				92AD8EAC1CBB413300C6EF14 /* ExDisplay.xcdatamodeld in Sources */,
-				92AD8EA61CBB413300C6EF14 /* ViewController.swift in Sources */,
+				92715A541CE1BFD60022E589 /* JSONKeyMapper.m in Sources */,
+				F63B49CB1CC9F1F30046F2FD /* MusicPlayerModel.swift in Sources */,
 				92AD8EA41CBB413300C6EF14 /* AppDelegate.swift in Sources */,
+				84E2E09D1CC9BD79002A39F1 /* ContactsViewController.swift in Sources */,
+				92715A511CE1BFD60022E589 /* JSONAPI.m in Sources */,
+				92715A4C1CE1BFD60022E589 /* JSONModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +703,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -425,23 +750,38 @@
 		};
 		92AD8ECC1CBB413300C6EF14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B52125E1682509A7548780 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExDisplay",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ExDisplay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.ExDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExDisplay/Contacts/ExDisplay-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		92AD8ECD1CBB413300C6EF14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 561391321C3F5B7036C3D40B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExDisplay",
+				);
 				INFOPLIST_FILE = ExDisplay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.ExDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExDisplay/Contacts/ExDisplay-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -449,6 +789,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExDisplay",
+				);
 				INFOPLIST_FILE = ExDisplayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.ExDisplayTests;
@@ -461,6 +805,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExDisplay",
+				);
 				INFOPLIST_FILE = ExDisplayTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.ExDisplayTests;
@@ -472,6 +820,10 @@
 		92AD8ED21CBB413300C6EF14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExDisplay",
+				);
 				INFOPLIST_FILE = ExDisplayUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.ExDisplayUITests;
@@ -483,6 +835,10 @@
 		92AD8ED31CBB413300C6EF14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExDisplay",
+				);
 				INFOPLIST_FILE = ExDisplayUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.ExDisplayUITests;

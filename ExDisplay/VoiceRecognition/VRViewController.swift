@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  VRViewController.swift
 //  ExDisplay
 //
 //  Created by mapbarDaLian on 16/4/11.
@@ -9,7 +9,7 @@
 import UIKit
 import ExAuto
 
-class ViewController: UIViewController {
+class VRViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
