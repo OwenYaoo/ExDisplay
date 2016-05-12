@@ -29,6 +29,15 @@ class PhoneViewController: UIViewController {
         label.text = "注意驾驶安全！"
         
         self.view.addSubview(label)
+        
+        let button = UIButton(frame:CGRectMake(100, 300, 150, 50))
+        button.backgroundColor = UIColor.redColor()
+        button.addTarget(self, action: #selector(PhoneViewController.clickButton), forControlEvents: .TouchDown)
+        self.view.addSubview(button)
+    }
+    func clickButton() {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("gotoContactsNotification", object: title)
     }
     
 }

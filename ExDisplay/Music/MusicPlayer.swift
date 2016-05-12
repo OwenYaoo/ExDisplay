@@ -147,7 +147,7 @@ class MusicPlayer: NSObject {
             musicPlayer.setQueueWithItemCollection(itemCollection!)
         }
         musicPlayer.nowPlayingItem = playingItem
-        musicPlayer.play()
+//        musicPlayer.play()
         timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(self.updateTime), userInfo: nil, repeats: true)
         return true
     }
