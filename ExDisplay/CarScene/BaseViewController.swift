@@ -15,6 +15,7 @@ class BaseViewController: UIViewController,ExDisplayControlProtocol {
 
     var defaultFocusView : UIView!
     var secondScreenView : UIView?
+    var externalWindow:UIWindow?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
