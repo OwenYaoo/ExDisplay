@@ -397,33 +397,14 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
     //MARK: - ExDisplayControlProtocol
     func confirm(){
         
-        let curView : UIView? = ExControlCenter.sharedInstance()!.focusView
-        let viewTag : Int = curView!.tag
-        switch viewTag {
-        case 0:
-            break
-        case 1001:
-            musicPlayer.musicPlayPrevious()
-            break
-        case 1002:
-            if musicListNameArray.count == 0 {
-                return
-            } else{
-                if isPlaying {
-                    isPlaying = false
-                    musicPlayer.musicPause()
-                } else {
-                    isPlaying = true
-                    musicPlayer.musicPlay()
-                }
+        if ExControlCenter.sharedInstance()?.focusView is ExViewDelegate {//遵循协议
+            let currentView = ExControlCenter.sharedInstance()!.focusView!
+            if currentView.respondsToSelector(NSSelectorFromString("sendActionsForControlEvents:")){//是UIControl类型的
+                
+                let control = currentView as! UIControl
+                control.sendActionsForControlEvents(.TouchUpInside)
+                
             }
-            break
-        case 1003:
-            musicPlayer.musicPlayNext()
-            break
-            
-        default:
-            break
             
         }
     }
