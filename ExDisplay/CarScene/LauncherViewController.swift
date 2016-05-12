@@ -66,8 +66,19 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         super.viewDidLoad()
         
         initView()
-
+        
         ExControlCenter.sharedInstance()!.setFocusForView(phoneBtn)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(LauncherViewController.gameOver(_:)), name: "gotoContactsNotification", object: nil)
+    }
+    
+    
+    func gameOver(title:NSNotification)
+    {
+        let contactsView :ContactsViewController = ContactsViewController()
+        
+        self.navigationController?.pushViewController(contactsView, animated: true)
+
     }
     
     override func didReceiveMemoryWarning() {
