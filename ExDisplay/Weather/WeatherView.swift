@@ -26,7 +26,6 @@ class WeatherView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor(patternImage: UIImage(named: "homeWeather-backgroundImage2x")!)
         layoutWeather(frame)
     }
     
