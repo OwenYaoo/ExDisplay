@@ -98,7 +98,7 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         self.view.addSubview(backImgView)
         
         let sideBarBg = UIImage(named: "homeSidebar")
-        let sideBarBgView = ExImageView(image: sideBarBg)
+        let sideBarBgView = UIImageView(image: sideBarBg)
         sideBarBgView.frame = CGRectMake(0, UIScreen.screens()[1].bounds.height/2-150, 71, 295)
         self.view.addSubview(sideBarBgView)
         
@@ -158,7 +158,7 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         let weatherViewWidth: CGFloat = (390 / 1920) * (UIScreen.screens()[1].bounds.width)
         let weatherViewHeight: CGFloat = (490 / 1080) * (UIScreen.screens()[1].bounds.height)
         let weatherImage = UIImage(named: "homeWeather-backgroundImage")
-        let weatherBackImg = ExImageView(image: weatherImage)
+        let weatherBackImg = UIImageView(image: weatherImage)
         weatherBackImg.frame = CGRect(x: 0, y: 0, width: weatherViewWidth, height: weatherViewHeight)
         weatherBackImg.center = CGPointMake(UIScreen.screens()[1].bounds.width - weatherViewWidth / 2 - 40, (345 / 1080) * (UIScreen.screens()[1].bounds.height))
         backImgView.addSubview(weatherBackImg)
@@ -230,7 +230,7 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         let musicViewLeading = (200 / 1920) * UIScreen.screens()[1].bounds.width
         let musicViewTop = UIScreen.screens()[1].bounds.height - (160 / 1080) * UIScreen.screens()[1].bounds.height
         let musicViewImage = UIImage(named: "homeMusic-backgroundImage")
-        let musicBackImg = ExImageView(image: musicViewImage)
+        let musicBackImg = UIImageView(image: musicViewImage)
         musicBackImg.frame = CGRect(x: musicViewLeading, y: musicViewTop, width: UIScreen.screens()[1].bounds.width - musicViewLeading * 2, height: 60)
         backImgView.addSubview(musicBackImg)
         musicPlayerView = MusicPlayerView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.screens()[1].bounds.width - musicViewLeading * 2, height: 60))
