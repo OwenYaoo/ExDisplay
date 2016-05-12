@@ -33,14 +33,12 @@ class MusicPlayerView: ExView {
     //MARK: - Custom Accessors
     // 初始化MusicPlayerView
     private func layoutMusicPlayer(frame: CGRect) {
-        self.backgroundColor = UIColor.whiteColor()
         
         self.addSubview(playPauseButton)
         self.addSubview(playNextButton)
         self.addSubview(playPreviousButton)
         self.addSubview(playMenuButton)
         self.addSubview(playProgressBar)
-        self.backgroundColor = UIColor(patternImage: UIImage(named: "homeMusic-backgroundImage")!)
         
         playPreviousButton.translatesAutoresizingMaskIntoConstraints = false
         let playPreviousButtonContrainLeading: NSLayoutConstraint = NSLayoutConstraint.init(item: playPreviousButton, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1.0, constant: 10)
