@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840FB43F1CD0BD1200298510 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FB43E1CD0BD1200298510 /* BaseViewController.swift */; };
 		84360C251CDAD72A00EFC4A5 /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84360C231CDAD72A00EFC4A5 /* LauncherViewController.swift */; };
 		84360C261CDAD72A00EFC4A5 /* SecondScreenLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84360C241CDAD72A00EFC4A5 /* SecondScreenLauncher.swift */; };
 		84E2E09B1CC9BD71002A39F1 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E09A1CC9BD71002A39F1 /* PhoneViewController.swift */; };
@@ -15,8 +14,6 @@
 		84E2E09F1CC9BD82002A39F1 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E09E1CC9BD82002A39F1 /* MusicViewController.swift */; };
 		84E2E0A11CC9BD8A002A39F1 /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E0A01CC9BD8A002A39F1 /* VRViewController.swift */; };
 		84E2E0A31CC9BD95002A39F1 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2E0A21CC9BD95002A39F1 /* WeatherViewController.swift */; };
-		92715A241CE1BF400022E589 /* ExAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92715A211CE1BF340022E589 /* ExAuto.framework */; };
-		92715A251CE1BF400022E589 /* ExAuto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92715A211CE1BF340022E589 /* ExAuto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92715A4B1CE1BFD60022E589 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92715A271CE1BFD60022E589 /* ContactsView.swift */; };
 		92715A4C1CE1BFD60022E589 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A2B1CE1BFD60022E589 /* JSONModel.m */; };
 		92715A4D1CE1BFD60022E589 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 92715A2D1CE1BFD60022E589 /* JSONModelArray.m */; };
@@ -41,6 +38,8 @@
 		92AD8EBC1CBB413300C6EF14 /* ExDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EBB1CBB413300C6EF14 /* ExDisplayTests.swift */; };
 		92AD8EC71CBB413300C6EF14 /* ExDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EC61CBB413300C6EF14 /* ExDisplayUITests.swift */; };
 		9A69ECEADF4DD662E537AF0C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB32D13AD2965A41CC237B6B /* Pods.framework */; };
+		F47AC1D11CE466DF00EA1128 /* ExAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47AC1D01CE466DF00EA1128 /* ExAuto.framework */; };
+		F47AC1D21CE466DF00EA1128 /* ExAuto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47AC1D01CE466DF00EA1128 /* ExAuto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F63B49C71CC9F1C60046F2FD /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49C61CC9F1C60046F2FD /* MusicPlayerView.swift */; };
 		F63B49C91CC9F1E00046F2FD /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49C81CC9F1E00046F2FD /* MusicPlayer.swift */; };
 		F63B49CB1CC9F1F30046F2FD /* MusicPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49CA1CC9F1F30046F2FD /* MusicPlayerModel.swift */; };
@@ -72,7 +71,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				92715A251CE1BF400022E589 /* ExAuto.framework in Embed Frameworks */,
+				F47AC1D21CE466DF00EA1128 /* ExAuto.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +81,6 @@
 /* Begin PBXFileReference section */
 		23B52125E1682509A7548780 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		561391321C3F5B7036C3D40B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		840FB43E1CD0BD1200298510 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		84360C231CDAD72A00EFC4A5 /* LauncherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
 		84360C241CDAD72A00EFC4A5 /* SecondScreenLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondScreenLauncher.swift; sourceTree = "<group>"; };
 		84E2E09A1CC9BD71002A39F1 /* PhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 		84E2E09E1CC9BD82002A39F1 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		84E2E0A01CC9BD8A002A39F1 /* VRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
 		84E2E0A21CC9BD95002A39F1 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
-		92715A211CE1BF340022E589 /* ExAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExAuto.framework; path = "/Users/owenyao/Library/Developer/Xcode/DerivedData/ExDisplay-augmhezhriatuifortxbjfohlaug/Build/Products/Debug-iphoneos/ExAuto.framework"; sourceTree = "<absolute>"; };
 		92715A271CE1BFD60022E589 /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		92715A2A1CE1BFD60022E589 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
 		92715A2B1CE1BFD60022E589 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
@@ -135,6 +132,7 @@
 		92AD8EC21CBB413300C6EF14 /* ExDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AD8EC61CBB413300C6EF14 /* ExDisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDisplayUITests.swift; sourceTree = "<group>"; };
 		92AD8EC81CBB413300C6EF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47AC1D01CE466DF00EA1128 /* ExAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExAuto.framework; path = "/Users/mapbar_ydt/Library/Developer/Xcode/DerivedData/ExDisplay-gphajglahdfwstgonezpyxatsohn/Build/Products/Debug-iphoneos/ExAuto.framework"; sourceTree = "<absolute>"; };
 		F63B49C61CC9F1C60046F2FD /* MusicPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
 		F63B49C81CC9F1E00046F2FD /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		F63B49CA1CC9F1F30046F2FD /* MusicPlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerModel.swift; sourceTree = "<group>"; };
@@ -148,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92715A241CE1BF400022E589 /* ExAuto.framework in Frameworks */,
+				F47AC1D11CE466DF00EA1128 /* ExAuto.framework in Frameworks */,
 				9A69ECEADF4DD662E537AF0C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +173,6 @@
 			children = (
 				84360C231CDAD72A00EFC4A5 /* LauncherViewController.swift */,
 				84360C241CDAD72A00EFC4A5 /* SecondScreenLauncher.swift */,
-				840FB43E1CD0BD1200298510 /* BaseViewController.swift */,
 			);
 			path = CarScene;
 			sourceTree = "<group>";
@@ -306,7 +303,7 @@
 		92AD8E971CBB413300C6EF14 = {
 			isa = PBXGroup;
 			children = (
-				92715A211CE1BF340022E589 /* ExAuto.framework */,
+				F47AC1D01CE466DF00EA1128 /* ExAuto.framework */,
 				92AD8EA21CBB413300C6EF14 /* ExDisplay */,
 				92AD8EBA1CBB413300C6EF14 /* ExDisplayTests */,
 				92AD8EC51CBB413300C6EF14 /* ExDisplayUITests */,
@@ -578,7 +575,6 @@
 				84E2E09F1CC9BD82002A39F1 /* MusicViewController.swift in Sources */,
 				92715A531CE1BFD60022E589 /* JSONModel+networking.m in Sources */,
 				84360C251CDAD72A00EFC4A5 /* LauncherViewController.swift in Sources */,
-				840FB43F1CD0BD1200298510 /* BaseViewController.swift in Sources */,
 				92715A4F1CE1BFD60022E589 /* JSONModelError.m in Sources */,
 				F63B49D01CCA252F0046F2FD /* WeatherView.swift in Sources */,
 				92715A4B1CE1BFD60022E589 /* ContactsView.swift in Sources */,
