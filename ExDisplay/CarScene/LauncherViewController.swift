@@ -51,6 +51,7 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
     var musicPlayerModel: MusicPlayerModel!
     let musicListNameArray: NSMutableArray = NSMutableArray()
     let phoneBtn = ExButton()
+    var backImgView = UIImageView()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
@@ -92,7 +93,7 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         self.view = UIView(frame:CGRectZero)
         
         let backImg = UIImage(named: "homeLauncherBg")
-        let backImgView = UIImageView(image: backImg)
+        backImgView.image = backImg
         backImgView.frame = UIScreen.screens()[1].bounds
         self.view.addSubview(backImgView)
         
@@ -102,22 +103,22 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         self.view.addSubview(sideBarBgView)
         
 //        let phoneBtn = ExButton()
-        phoneBtn.frame = CGRectMake(5, 40, 56, 56)
+        phoneBtn.frame = CGRectMake(5, 40 + CGRectGetMinY(sideBarBgView.frame), 56, 56)
         phoneBtn.setImage(UIImage(named: "homeCall"), forState: UIControlState.Normal)
         phoneBtn.tag = 2000
-        sideBarBgView.addSubview(phoneBtn)
+        backImgView.addSubview(phoneBtn)
         
         let albumBtn = ExButton()
-        albumBtn.frame = CGRectMake(5, sideBarBgView.frame.height/2-28, 56, 56)
+        albumBtn.frame = CGRectMake(5, sideBarBgView.frame.height/2-28 + CGRectGetMinY(sideBarBgView.frame), 56, 56)
         albumBtn.setImage(UIImage(named: "homeAlbum"), forState: UIControlState.Normal)
         albumBtn.tag = 2001
-        sideBarBgView.addSubview(albumBtn)
+        backImgView.addSubview(albumBtn)
         
         let voiceBtn = ExButton()
-        voiceBtn.frame = CGRectMake(5, sideBarBgView.frame.height-40-56, 56, 56)
+        voiceBtn.frame = CGRectMake(5, sideBarBgView.frame.height-40-56 + CGRectGetMinY(sideBarBgView.frame), 56, 56)
         voiceBtn.setImage(UIImage(named: "homeVoice"), forState: UIControlState.Normal)
         voiceBtn.tag = 2002
-        sideBarBgView.addSubview(voiceBtn)
+        backImgView.addSubview(voiceBtn)
         
         let settingBtn = ExButton()
         settingBtn.frame = CGRectMake(5, UIScreen.screens()[1].bounds.height-50-56, 56, 56)
@@ -154,11 +155,18 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         getDate()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(getDate), name: NSCalendarDayChangedNotification, object: nil)
 
-        weatherView = WeatherView.init(frame: CGRect(x: 1920 - 429, y: 100, width: 390, height: 490))
-        self.view.addSubview(weatherView)
+        let weatherViewWidth: CGFloat = (390 / 1920) * (UIScreen.screens()[1].bounds.width)
+        let weatherViewHeight: CGFloat = (490 / 1080) * (UIScreen.screens()[1].bounds.height)
+        let weatherImage = UIImage(named: "homeWeather-backgroundImage")
+        let weatherBackImg = ExImageView(image: weatherImage)
+        weatherBackImg.frame = CGRect(x: 0, y: 0, width: weatherViewWidth, height: weatherViewHeight)
+        weatherBackImg.center = CGPointMake(UIScreen.screens()[1].bounds.width - weatherViewWidth / 2 - 40, (345 / 1080) * (UIScreen.screens()[1].bounds.height))
+        backImgView.addSubview(weatherBackImg)
+        weatherView = WeatherView.init(frame: CGRect(x: 0, y: 0, width: weatherViewWidth, height: weatherViewHeight))
+        weatherBackImg.addSubview(weatherView)
         
         self.activity = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        self.activity.center = CGPoint(x: 175, y: 225)
+        self.activity.center = CGPoint(x: weatherViewWidth / 2, y: weatherViewHeight / 2)
         self.activity.activityIndicatorViewStyle = .White
         weatherView.addSubview(self.activity)
         self.activity.startAnimating()
@@ -216,11 +224,17 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
     }
     
     private func initBaseView() {
-        
+
         // 初始化MusicPlayerView
         self.view.backgroundColor = UIColor.whiteColor()
-        musicPlayerView = MusicPlayerView.init(frame: CGRect(x: 200, y: 1080 - 160, width: 1520, height: 60))
-        self.view.addSubview(musicPlayerView)
+        let musicViewLeading = (200 / 1920) * UIScreen.screens()[1].bounds.width
+        let musicViewTop = UIScreen.screens()[1].bounds.height - (160 / 1080) * UIScreen.screens()[1].bounds.height
+        let musicViewImage = UIImage(named: "homeMusic-backgroundImage")
+        let musicBackImg = ExImageView(image: musicViewImage)
+        musicBackImg.frame = CGRect(x: musicViewLeading, y: musicViewTop, width: UIScreen.screens()[1].bounds.width - musicViewLeading * 2, height: 60)
+        backImgView.addSubview(musicBackImg)
+        musicPlayerView = MusicPlayerView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.screens()[1].bounds.width - musicViewLeading * 2, height: 60))
+        musicBackImg.addSubview(musicPlayerView)
         
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
