@@ -15,8 +15,8 @@ import Foundation
 import MediaPlayer
 
 class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocationManagerDelegate,MusicPlayerDelegate {
-    
-    var secondScreenView : UIView?
+    var externalWindow:UIWindow?
+//    var secondScreenView : UIView?
     var defaultFocusView : UIView?
     
     var dateLabelForDay : UILabel?
@@ -50,6 +50,7 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
     var musicPlayer: MusicPlayer!
     var musicPlayerModel: MusicPlayerModel!
     let musicListNameArray: NSMutableArray = NSMutableArray()
+    let phoneBtn = ExButton()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
@@ -65,9 +66,8 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         super.viewDidLoad()
         
         initView()
-        secondScreenView = self.view
-        ExControlCenter.sharedInstance()!.displayControlDelegate = self
-        ExControlCenter.sharedInstance()!.setFocusForView(defaultFocusView)
+        
+        ExControlCenter.sharedInstance()!.setFocusForView(phoneBtn)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(LauncherViewController.gameOver(_:)), name: "gotoContactsNotification", object: nil)
     }
@@ -97,29 +97,29 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         self.view.addSubview(backImgView)
         
         let sideBarBg = UIImage(named: "homeSidebar")
-        let sideBarBgView = UIImageView(image: sideBarBg)
+        let sideBarBgView = ExImageView(image: sideBarBg)
         sideBarBgView.frame = CGRectMake(0, UIScreen.screens()[1].bounds.height/2-150, 71, 295)
         self.view.addSubview(sideBarBgView)
         
-        let phoneBtn = UIButton()
+//        let phoneBtn = ExButton()
         phoneBtn.frame = CGRectMake(5, 40, 56, 56)
         phoneBtn.setImage(UIImage(named: "homeCall"), forState: UIControlState.Normal)
         phoneBtn.tag = 2000
         sideBarBgView.addSubview(phoneBtn)
         
-        let albumBtn = UIButton()
+        let albumBtn = ExButton()
         albumBtn.frame = CGRectMake(5, sideBarBgView.frame.height/2-28, 56, 56)
         albumBtn.setImage(UIImage(named: "homeAlbum"), forState: UIControlState.Normal)
         albumBtn.tag = 2001
         sideBarBgView.addSubview(albumBtn)
         
-        let voiceBtn = UIButton()
+        let voiceBtn = ExButton()
         voiceBtn.frame = CGRectMake(5, sideBarBgView.frame.height-40-56, 56, 56)
         voiceBtn.setImage(UIImage(named: "homeVoice"), forState: UIControlState.Normal)
         voiceBtn.tag = 2002
         sideBarBgView.addSubview(voiceBtn)
         
-        let settingBtn = UIButton()
+        let settingBtn = ExButton()
         settingBtn.frame = CGRectMake(5, UIScreen.screens()[1].bounds.height-50-56, 56, 56)
         settingBtn.setImage(UIImage(named: "homeSetting"), forState: UIControlState.Normal)
         settingBtn.tag = 2003

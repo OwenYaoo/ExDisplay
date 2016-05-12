@@ -8,14 +8,15 @@
 
 import Foundation
 import MediaPlayer
+import ExAuto
 
-class MusicPlayerView: UIView {
+class MusicPlayerView: ExView {
     //MARK: - Properties
 
-    lazy var playPauseButton: UIButton = UIButton.init(frame: CGRectZero)
-    lazy var playNextButton: UIButton  = UIButton.init(frame: CGRectZero)
-    lazy var playPreviousButton: UIButton = UIButton.init(frame: CGRectZero)
-    lazy var playMenuButton: UIButton  = UIButton.init(frame: CGRectZero)
+    lazy var playPauseButton: ExButton = ExButton.init(frame: CGRectZero)
+    lazy var playNextButton: ExButton  = ExButton.init(frame: CGRectZero)
+    lazy var playPreviousButton: ExButton = ExButton.init(frame: CGRectZero)
+    lazy var playMenuButton: ExButton  = ExButton.init(frame: CGRectZero)
     lazy var playProgressBar: UIProgressView = UIProgressView.init(frame: CGRectZero)
     
     //MARK: - LifeCycle

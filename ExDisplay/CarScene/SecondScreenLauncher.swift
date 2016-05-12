@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import ExAuto
 class SecondScreenLauncher {
     
     var secondWindow : UIWindow?
@@ -24,6 +24,8 @@ class SecondScreenLauncher {
             self.secondWindow!.hidden = false
             
             let carViewController = LauncherViewController()
+            ExControlCenter.sharedInstance()!.displayControlDelegate = carViewController
+            ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow = self.secondWindow
             let naviController = UINavigationController(rootViewController: carViewController)
             naviController.navigationBarHidden = true;
             
