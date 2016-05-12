@@ -10,7 +10,7 @@ import Foundation
 import MediaPlayer
 import ExAuto
 
-class MusicPlayerView: ExView {
+class MusicPlayerView: UIView {
     //MARK: - Properties
 
     lazy var playPauseButton: ExButton = ExButton.init(frame: CGRectZero)
