@@ -4,23 +4,16 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "A4CE6162828B7482EF438B3A748ACC962944E82D" : 0,
-    "40ED912133F83BE5D75D4B16AE488CE8F2AC69AA" : 0
+    "A4CE6162828B7482EF438B3A748ACC962944E82D" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3BA42E8E-F653-418E-8941-146C573DEDCF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "A4CE6162828B7482EF438B3A748ACC962944E82D" : "ExDisplay\/",
-    "40ED912133F83BE5D75D4B16AE488CE8F2AC69AA" : "ExDisplay\/ExAuto\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "ExDisplay",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ExDisplay.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AppSudio\/ExAuto.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "40ED912133F83BE5D75D4B16AE488CE8F2AC69AA"
-    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AppSudio\/ExDisplay.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
