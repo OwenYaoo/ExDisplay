@@ -1,0 +1,6 @@
+framework module ExAuto {
+  umbrella header "ExAuto-umbrella.h"
+
+  export *
+  module * { export * }
+}

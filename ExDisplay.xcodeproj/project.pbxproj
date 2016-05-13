@@ -38,8 +38,6 @@
 		92AD8EBC1CBB413300C6EF14 /* ExDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EBB1CBB413300C6EF14 /* ExDisplayTests.swift */; };
 		92AD8EC71CBB413300C6EF14 /* ExDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD8EC61CBB413300C6EF14 /* ExDisplayUITests.swift */; };
 		9A69ECEADF4DD662E537AF0C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB32D13AD2965A41CC237B6B /* Pods.framework */; };
-		F47AC1D11CE466DF00EA1128 /* ExAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47AC1D01CE466DF00EA1128 /* ExAuto.framework */; };
-		F47AC1D21CE466DF00EA1128 /* ExAuto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47AC1D01CE466DF00EA1128 /* ExAuto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F63B49C71CC9F1C60046F2FD /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49C61CC9F1C60046F2FD /* MusicPlayerView.swift */; };
 		F63B49C91CC9F1E00046F2FD /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49C81CC9F1E00046F2FD /* MusicPlayer.swift */; };
 		F63B49CB1CC9F1F30046F2FD /* MusicPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B49CA1CC9F1F30046F2FD /* MusicPlayerModel.swift */; };
@@ -71,7 +69,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F47AC1D21CE466DF00EA1128 /* ExAuto.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +129,6 @@
 		92AD8EC21CBB413300C6EF14 /* ExDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AD8EC61CBB413300C6EF14 /* ExDisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDisplayUITests.swift; sourceTree = "<group>"; };
 		92AD8EC81CBB413300C6EF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F47AC1D01CE466DF00EA1128 /* ExAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ExAuto.framework; path = "/Users/mapbar_ydt/Library/Developer/Xcode/DerivedData/ExDisplay-gphajglahdfwstgonezpyxatsohn/Build/Products/Debug-iphoneos/ExAuto.framework"; sourceTree = "<absolute>"; };
 		F63B49C61CC9F1C60046F2FD /* MusicPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
 		F63B49C81CC9F1E00046F2FD /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		F63B49CA1CC9F1F30046F2FD /* MusicPlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerModel.swift; sourceTree = "<group>"; };
@@ -146,7 +142,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47AC1D11CE466DF00EA1128 /* ExAuto.framework in Frameworks */,
 				9A69ECEADF4DD662E537AF0C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +298,6 @@
 		92AD8E971CBB413300C6EF14 = {
 			isa = PBXGroup;
 			children = (
-				F47AC1D01CE466DF00EA1128 /* ExAuto.framework */,
 				92AD8EA21CBB413300C6EF14 /* ExDisplay */,
 				92AD8EBA1CBB413300C6EF14 /* ExDisplayTests */,
 				92AD8EC51CBB413300C6EF14 /* ExDisplayUITests */,
