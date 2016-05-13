@@ -3,6 +3,7 @@
 *.pbxuser
 !default.pbxuser
 *.xcbkptlist
+.DS_Store
 *.DS_Store
 *.DS_Store?
 *.gitignore.swp
