@@ -41,6 +41,7 @@ class MusicPlayerView: UIView {
         self.addSubview(playProgressBar)
         
         playPreviousButton.translatesAutoresizingMaskIntoConstraints = false
+        playPreviousButton.surroundings = [nil,nil,nil, playPauseButton]
         let playPreviousButtonContrainLeading: NSLayoutConstraint = NSLayoutConstraint.init(item: playPreviousButton, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1.0, constant: 10)
         let playPreviousButtonContrainTop: NSLayoutConstraint = NSLayoutConstraint.init(item: playPreviousButton, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: 15.0)
         let playPreviousButtonContrainHeight: NSLayoutConstraint = NSLayoutConstraint.init(item: playPreviousButton, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: 30.0)

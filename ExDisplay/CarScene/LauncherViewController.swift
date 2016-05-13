@@ -182,6 +182,11 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         musicPlayerView.playNextButton.surroundings = [voiceBtn,musicPlayerView.playPauseButton,nil,musicPlayerView.playMenuButton]
         musicPlayerView.playMenuButton.surroundings = [voiceBtn,musicPlayerView.playNextButton,nil,nil]
     
+        // 添加MusicPlayerView中控件点击事件
+        musicPlayerView.playPauseButton.addTarget(self, action: #selector(handlePlayStatusButtonClick(_:)), forControlEvents: .TouchUpInside)
+        musicPlayerView.playNextButton.addTarget(self, action: #selector(handlePlayStatusButtonClick(_:)), forControlEvents: .TouchUpInside)
+        musicPlayerView.playPreviousButton.addTarget(self, action: #selector(handlePlayStatusButtonClick(_:)), forControlEvents: .TouchUpInside)
+        musicPlayerView.playMenuButton.addTarget(self, action: #selector(handlePlayStatusButtonClick(_:)), forControlEvents: .TouchUpInside)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -212,6 +217,36 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         dateLabelForDay?.text = String.init(format: "%d", components.day)
         dateLabelForWeek?.text = String.init(calendar.weekdaySymbols[components.weekday])
         dateLabelForMonth?.text = String.init(format: "%d年%d月%d日", components.year,components.month,components.day)
+    }
+    
+    //MARK: - IBActions
+    func handlePlayStatusButtonClick(sender: UIButton) -> Void {
+        switch sender {
+        case musicPlayerView.playPauseButton:
+            if musicListNameArray.count == 0 {
+                return
+            } else{
+                if isPlaying {
+                    isPlaying = false
+                    musicPlayer.musicPause()
+                } else {
+                    isPlaying = true
+                    musicPlayer.musicPlay()
+                }
+            }
+            break
+        case musicPlayerView.playNextButton:
+            musicPlayer.musicPlayNext()
+            break
+        case musicPlayerView.playPreviousButton:
+            musicPlayer.musicPlayPrevious()
+            break
+        case musicPlayerView.playMenuButton:
+            
+            break
+        default:
+            break
+        }
     }
     
     //MARK: - Private
