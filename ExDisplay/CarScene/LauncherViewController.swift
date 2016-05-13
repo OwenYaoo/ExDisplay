@@ -173,6 +173,15 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         
         initMusiPlayer()
         initBaseView()
+        phoneBtn.surroundings = [nil,nil,albumBtn,musicPlayerView.playPreviousButton]
+        albumBtn.surroundings = [phoneBtn,nil,voiceBtn,musicPlayerView.playPreviousButton]
+        voiceBtn.surroundings = [albumBtn,nil,settingBtn,musicPlayerView.playPreviousButton]
+        settingBtn.surroundings = [voiceBtn,nil,nil,musicPlayerView.playPreviousButton]
+        musicPlayerView.playPreviousButton.surroundings = [voiceBtn,settingBtn,nil,musicPlayerView.playPauseButton]
+        musicPlayerView.playPauseButton.surroundings = [voiceBtn,musicPlayerView.playPreviousButton,nil,musicPlayerView.playNextButton]
+        musicPlayerView.playNextButton.surroundings = [voiceBtn,musicPlayerView.playPauseButton,nil,musicPlayerView.playMenuButton]
+        musicPlayerView.playMenuButton.surroundings = [voiceBtn,musicPlayerView.playNextButton,nil,nil]
+    
     }
     
     override func viewDidAppear(animated: Bool) {
