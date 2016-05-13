@@ -16,7 +16,7 @@ import MediaPlayer
 
 class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocationManagerDelegate,MusicPlayerDelegate {
     var externalWindow:UIWindow?
-//    var secondScreenView : UIView?
+
     var defaultFocusView : UIView?
     
     var dateLabelForDay : UILabel?
@@ -102,7 +102,7 @@ class LauncherViewController: UIViewController,ExDisplayControlProtocol, CLLocat
         sideBarBgView.frame = CGRectMake(0, UIScreen.screens()[1].bounds.height/2-150, 71, 295)
         self.view.addSubview(sideBarBgView)
         
-//        let phoneBtn = ExButton()
+
         phoneBtn.frame = CGRectMake(5, 40 + CGRectGetMinY(sideBarBgView.frame), 56, 56)
         phoneBtn.setImage(UIImage(named: "homeCall"), forState: UIControlState.Normal)
         phoneBtn.tag = 2000

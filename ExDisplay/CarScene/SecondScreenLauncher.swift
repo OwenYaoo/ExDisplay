@@ -49,6 +49,8 @@ class SecondScreenLauncher {
             
             let carViewController = LauncherViewController()
             let naviController = UINavigationController(rootViewController: carViewController)
+            ExControlCenter.sharedInstance()!.displayControlDelegate = carViewController
+            ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow = self.secondWindow
             naviController.navigationBarHidden = true;
             
             self.secondWindow?.rootViewController = naviController
@@ -63,6 +65,8 @@ class SecondScreenLauncher {
         if (self.secondWindow != nil) {
             self.secondWindow!.hidden = true;
             self.secondWindow = nil;
+            ExControlCenter.sharedInstance()!.displayControlDelegate = nil
+            
         }
     }
     
