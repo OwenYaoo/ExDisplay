@@ -13,13 +13,13 @@ import UIKit
     
     var externalWindow:UIWindow?{get set}
     
-    optional func confirm()//用户按了确认键
-    optional func back()//用户按了back键
-    optional func voiceChange(voiceAmountScale:Float)//音量改变
-    optional func showMenu()//显示菜单
-    optional func hideMenu()//收起菜单
-    optional func showSiri()//显示语音界面
-    optional func hideSiri()//收起语音界面
+    @objc optional func confirm()//用户按了确认键
+    @objc optional func back()//用户按了back键
+    @objc optional func voiceChange(voiceAmountScale:Float)//音量改变
+    @objc optional func showMenu()//显示菜单
+    @objc optional func hideMenu()//收起菜单
+    @objc optional func showSiri()//显示语音界面
+    @objc optional func hideSiri()//收起语音界面
 }
 
 /**
@@ -116,17 +116,17 @@ public class ExControlCenter:NSObject,ExFocusDelegate,BLECentralDelegate {
     }
     //MARK: Ble代理
     public func didUpdataValue(Central: EXBLECentralManager, value: NSString) {
-        if value.isEqualToString("1001") {
+        if value.isEqual(to: "1001") {
             performUp()
-        }else if value.isEqualToString("1003"){
+        }else if value.isEqual(to: "1003"){
             performDown()
-        }else if(value.isEqualToString("1004")){
+        }else if(value.isEqual(to: "1004")){
             performLeft()
-        }else if(value.isEqualToString("1005")){
+        }else if(value.isEqual(to: "1005")){
             performRight()
-        }else if(value.isEqualToString("1002")){
+        }else if(value.isEqual(to: "1002")){
             confirm()
-        }else if(value.isEqualToString("1010")){
+        }else if(value.isEqual(to: "1010")){
             back()
         }
     
@@ -148,7 +148,9 @@ public class ExControlCenter:NSObject,ExFocusDelegate,BLECentralDelegate {
      */
     public func performUp(){
         
-        focusManager.lookup_Up(animated: true)
+        if displayControlDelegate != nil {
+            focusManager.lookup_Up(animated: true)
+        }
 
         
     }
@@ -157,14 +159,18 @@ public class ExControlCenter:NSObject,ExFocusDelegate,BLECentralDelegate {
      */
     public func performLeft(){
         
-        focusManager.lookup_Left(animated: true)
+        if displayControlDelegate != nil {
+            focusManager.lookup_Left(animated: true)
+        }
     }
     /**
      遥控器向右
      */
     public func performRight(){
         
-        focusManager.lookup_Right(animated: true)
+        if displayControlDelegate != nil {
+            focusManager.lookup_Right(animated: true)
+        }
         
     }
     /**
@@ -172,8 +178,9 @@ public class ExControlCenter:NSObject,ExFocusDelegate,BLECentralDelegate {
      */
     public func performDown(){
         
-        
-        focusManager.lookup_Down(animated: true)
+        if displayControlDelegate != nil {
+            focusManager.lookup_Down(animated: true)
+        }
         
     }
     /**
@@ -199,9 +206,9 @@ public class ExControlCenter:NSObject,ExFocusDelegate,BLECentralDelegate {
      */
     public func setFocusForView(view:UIView?){
         
-        if view != nil{
+        if view != nil && nil != displayControlDelegate{
 
-            focusManager.setFocusForView(view!, withAnimated: true)
+            focusManager.setFocusForView(view: view!, withAnimated: true)
         }
     }
     
@@ -224,7 +231,7 @@ public class ExControlCenter:NSObject,ExFocusDelegate,BLECentralDelegate {
      */
     public func voiceChange(voiceAmoutScale:Float){
 
-        displayControlDelegate?.voiceChange?(voiceAmoutScale)
+        displayControlDelegate?.voiceChange?(voiceAmountScale: voiceAmoutScale)
     }
     
     //MARK:语音指令

@@ -277,6 +277,7 @@ public class ExWindow:UIWindow,ExViewDelegate {
     
 }
 //MARK: 焦点管理器类
+/// 控件不可用autolayout布局，只能用frame，因为焦点是根据frame在编译阶段就确定了的
 class ExFocusManager {
 
     private static var singleton:ExFocusManager?
@@ -303,16 +304,16 @@ class ExFocusManager {
         return singleton!
     }
     
-    init() {
+    private init() {
         setupFocusView()
     }
     //MARK:- Instance Methods
     private func setupFocusView() {
         
-        focusView.backgroundColor = UIColor.clearColor()
+        focusView.backgroundColor = UIColor.clear
         focusView.layer.cornerRadius = 8
         focusView.layer.borderWidth = 4
-        focusView.layer.borderColor = colorFromHexRGB("7FFF00").CGColor
+        focusView.layer.borderColor = colorFromHexRGB(inColorString: "7FFF00").cgColor
         
     }
     
@@ -322,8 +323,8 @@ class ExFocusManager {
         let redByte,greenByte,blueByte:u_char
         
         if (inColorString != nil) {
-            let scanner = NSScanner.init(string: inColorString!)
-            scanner.scanHexInt(&colorCode)
+            let scanner = Scanner.init(string: inColorString!)
+            scanner.scanHexInt32(&colorCode)
             redByte = u_char(colorCode >> 16)
             greenByte = u_char((colorCode & 0xff00) >> 8)
             blueByte = u_char(colorCode & 0xff)
@@ -331,7 +332,7 @@ class ExFocusManager {
             
             return result
         }else{
-            return UIColor.whiteColor()
+            return UIColor.white
         }
     }
     /**
@@ -350,7 +351,7 @@ class ExFocusManager {
                     ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.addSubview(focusView)
                 }
                 
-                moveFocus(view!, withAnimated: animated)
+                moveFocus(view: view!, withAnimated: animated)
                 
             }
         }else{
@@ -365,7 +366,7 @@ class ExFocusManager {
      */
     private func moveFocus(view:UIView,withAnimated animated:Bool){
         
-        var finalFrame = convertRectToSecondWindow(view)
+        var finalFrame = convertRectToSecondWindow(view: view)
         finalFrame.origin.x -= 2
         finalFrame.origin.y -= 2
         finalFrame.size.height += 4
@@ -375,11 +376,11 @@ class ExFocusManager {
             
             if currentItem != nil {//确实选了另外一个
 
-                let originalFrame = convertRectToSecondWindow(currentItem!)
+                let originalFrame = convertRectToSecondWindow(view: currentItem!)
                 
                 if animated {
                     
-                    UIView.animateWithDuration(0.3, animations: {
+                    UIView.animate(withDuration: 0.3, animations: {
                         
                         self.focusView.frame = originalFrame
                         
@@ -389,51 +390,51 @@ class ExFocusManager {
                             
                             if complete {
                                 
-                                ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.bringSubviewToFront(self.focusView)
+                                ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.bringSubview(toFront: self.focusView)
                                 
                                 view.lastFocusView = self.currentItem
                                 
                                 self.currentItem = view as? UIView
                                 
-                                self.focusDelegate?.focus(self.focusView, didSelectView: (view as! UIView))
+                                self.focusDelegate?.focus(focus: self.focusView, didSelectView: (view as! UIView))
                                 
                             }
                         }
                         
                     )
                 }else{
-                    ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.bringSubviewToFront(focusView)
+                    ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.bringSubview(toFront: focusView)
                     focusView.frame = finalFrame
                     view.lastFocusView = currentItem
                     currentItem = view as? UIView
-                    focusDelegate?.focus(focusView, didSelectView: (view as! UIView))
+                    focusDelegate?.focus(focus: focusView, didSelectView: (view as! UIView))
                     
                 }
                 
             }else if nil == currentItem{//当前没有选定的
                 
                 if animated {
-                    ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.bringSubviewToFront(self.focusView)
-                    UIView.animateWithDuration(0.3, animations: {
+                    ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.bringSubview(toFront: self.focusView)
+                    UIView.animate(withDuration: 0.3, animations: {
                         
-                        self.focusView.frame = self.convertRectToSecondWindow(view as! UIView)
+                        self.focusView.frame = self.convertRectToSecondWindow(view: view as! UIView)
                         
                         }, completion: { complete in
                             if complete {
-                                ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.bringSubviewToFront(self.focusView)
+                                ExControlCenter.sharedInstance()?.displayControlDelegate?.externalWindow?.bringSubview(toFront: self.focusView)
                                 view.lastFocusView = self.currentItem
                                 self.currentItem = view as? UIView
                                 
-                                self.focusDelegate?.focus(self.focusView, didSelectView: (view as! UIView))
+                                self.focusDelegate?.focus(focus: self.focusView, didSelectView: (view as! UIView))
                             }
                         }
                     )
                 }else{
-                    UIApplication.sharedApplication().windows.last?.bringSubviewToFront(focusView)
+                    UIApplication.shared.windows.last?.bringSubview(toFront: focusView)
                     focusView.frame = finalFrame
                     view.lastFocusView = currentItem
                     currentItem = view as? UIView
-                    focusDelegate?.focus(focusView, didSelectView: (view as! UIView))
+                    focusDelegate?.focus(focus: focusView, didSelectView: (view as! UIView))
                 }
                 
             }
@@ -444,21 +445,21 @@ class ExFocusManager {
     }
     
     private func convertRectToSecondWindow(view:UIView) -> CGRect{
-        return ExControlCenter.sharedInstance()!.displayControlDelegate!.externalWindow!.convertRect(view.frame, fromView: view.superview)
+        return ExControlCenter.sharedInstance()!.displayControlDelegate!.externalWindow!.convert(view.frame, from: view.superview)
         
         
     }
     
     private func convertPointToSecondWindow(point:CGPoint,withView view:UIView) -> CGPoint{
         
-        return ExControlCenter.sharedInstance()!.displayControlDelegate!.externalWindow!.convertPoint(point, fromView: view.superview)
+        return ExControlCenter.sharedInstance()!.displayControlDelegate!.externalWindow!.convert(point, from: view.superview)
         
     }
     
     /**
      向上查找
      */
-    func lookup_Up(animated animated:Bool) {
+    func lookup_Up(animated:Bool) {
         
 //        if let items = (currentItem?.superView ?? currentItem?.superview)?.availableSubviews {//当前有选中项
 //            
@@ -496,7 +497,7 @@ class ExFocusManager {
 //        }
         if let current = currentItem as? ExViewDelegate {
             if nil != current.surroundings[0] {
-                setFocusForView(current.surroundings[0], withAnimated: animated)
+                setFocusForView(view: current.surroundings[0], withAnimated: animated)
             }
         }
         
@@ -506,11 +507,11 @@ class ExFocusManager {
      向左查找
      标注同向上
      */
-    func lookup_Left(animated animated:Bool) {
+    func lookup_Left(animated:Bool) {
         
         if let current = currentItem as? ExViewDelegate {
             if nil != current.surroundings[1] {
-                setFocusForView(current.surroundings[1], withAnimated: animated)
+                setFocusForView(view: current.surroundings[1], withAnimated: animated)
             }
         }
     }
@@ -518,12 +519,12 @@ class ExFocusManager {
      向右查找
      标注同向上
      */
-    func lookup_Right(animated animated:Bool) {
+    func lookup_Right(animated:Bool) {
         
 
         if let current = currentItem as? ExViewDelegate {
             if nil != current.surroundings[3] {
-                setFocusForView(current.surroundings[3], withAnimated: animated)
+                setFocusForView(view: current.surroundings[3], withAnimated: animated)
             }
         }
     }
@@ -531,11 +532,11 @@ class ExFocusManager {
      向下查找
      标注同向上
      */
-    func lookup_Down(animated animated:Bool) {
+    func lookup_Down(animated:Bool) {
         
         if let current = currentItem as? ExViewDelegate {
             if nil != current.surroundings[2] {
-                setFocusForView(current.surroundings[2], withAnimated: animated)
+                setFocusForView(view: current.surroundings[2], withAnimated: animated)
             }
         }
     }
